@@ -6,8 +6,8 @@ class Api::V1::UsersController < ApplicationController
 	end
 
 	def show
-		users = User.all.find(params[:id])
-		render json: users
+		user = User.all.find(params[:id])
+		render json: user
 	end
 
 	def create
