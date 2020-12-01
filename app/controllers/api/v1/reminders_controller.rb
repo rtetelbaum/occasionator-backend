@@ -30,7 +30,7 @@ class Api::V1::RemindersController < ApplicationController
 	private
 	
 	def reminder_params
-		params.permit(:text)
+		params.permit(:user_id, :text)
 	end
 
 end

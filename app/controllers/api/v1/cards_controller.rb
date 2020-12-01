@@ -30,7 +30,7 @@ class Api::V1::CardsController < ApplicationController
 	private
 	
 	def card_params
-		params.permit(:image_url, :sender_email, :recipient_email, :subject, :message)
+		params.permit(:image_url, :sender_email, :recipient_email, :subject, :message, :user_id)
 	end
 	
 end
