@@ -1,5 +1,4 @@
 class User < ApplicationRecord
-	has_many :user_cards
-	has_many :cards, through: :user_cards
-	has_many :reminders
+	has_many :cards, dependent: :destroy
+	has_many :reminders, dependent: :destroy
 end

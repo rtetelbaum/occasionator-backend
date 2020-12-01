@@ -6,6 +6,7 @@ class CreateCards < ActiveRecord::Migration[6.0]
 			t.string :recipient_email
 			t.string :subject
 			t.string :message
+			t.references :user, null: false, foreign_key: true
 
       t.timestamps
     end
