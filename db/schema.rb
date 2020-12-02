@@ -17,7 +17,7 @@ ActiveRecord::Schema.define(version: 2020_11_30_203321) do
 
   create_table "cards", force: :cascade do |t|
     t.string "image_url"
-    t.string "sender_email"
+    t.string "sender_name"
     t.string "recipient_email"
     t.string "subject"
     t.string "message"
