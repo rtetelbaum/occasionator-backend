@@ -17,7 +17,7 @@ class Api::V1::RemindersController < ApplicationController
 
 	def update
 		reminder = Reminder.find(params[:id])
-		reminder.update(text: params[text])
+		reminder.update(text: params[:text])
 		render json: reminder
 	end
 
