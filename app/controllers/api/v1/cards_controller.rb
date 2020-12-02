@@ -17,7 +17,7 @@ class Api::V1::CardsController < ApplicationController
 
 	def update
 		card = Card.find(params[:id])
-		card.update(image_url: params[:image_url], sender_email: params[:sender_email], recipient_email: params[:recipient_email], subject: params[:subject], message: params[:message])
+		card.update(image_url: params[:image_url], sender_name: params[:sender_name], recipient_email: params[:recipient_email], subject: params[:subject], message: params[:message])
 		render json: card
 	end
 
@@ -30,7 +30,7 @@ class Api::V1::CardsController < ApplicationController
 	private
 	
 	def card_params
-		params.permit(:image_url, :sender_email, :recipient_email, :subject, :message, :user_id)
+		params.permit(:image_url, :sender_name, :recipient_email, :subject, :message, :user_id)
 	end
 	
 end
