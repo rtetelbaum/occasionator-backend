@@ -9,7 +9,7 @@
 user1 = User.create(first_name: 'Roman', last_name: 'Tetelbaum', email: 'rtetelbaum@mailbox.org')
 user2 = User.create(first_name: 'Lee', last_name: 'Michaeli', email: 'leeisr@gmail.com')
 
-card1 = Card.create(image_url: './assets/occasions/birthday/birthday02.png', sender_email: 'rtetelbaum@mailbox.org', recipient_email: 'grandma@gmail.com', subject: 'Happy Birthday', message: 'Happy Birthday Grandma! Love you!', user: user1)
+card1 = Card.create(image_url: './assets/occasions/birthday/birthday02.jpg', sender_email: 'rtetelbaum@mailbox.org', recipient_email: 'grandma@gmail.com', subject: 'Happy Birthday', message: 'Happy Birthday Grandma! Love you!', user: user1)
 card2 = Card.create(image_url: './assets/occasions/christmas/christmas04.jpg', sender_email: 'leeisr@gmail.com', recipient_email: 'cheese@cheese.com', subject: 'happy chrysler', message: 'send me money', user: user2)
 card3 = Card.create(image_url: './assets/occasions/birthday/birthday03.jpg', sender_email: 'rtetelbaum@mailbox.org', recipient_email: 'mom@gmail.com', subject: 'Happy Birthday', message: 'Happy Birthday Mom! Love you!', user: user1)
 card4 = Card.create(image_url: './assets/occasions/christmas/christmas05.jpg', sender_email: 'leeisr@gmail.com', recipient_email: 'butter@butter.com', subject: 'mas chris', message: 'send me more money', user: user2)
