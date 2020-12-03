@@ -15,12 +15,6 @@ class Api::V1::CardsController < ApplicationController
 		render json: card
 	end
 
-	def update
-		card = Card.find(params[:id])
-		card.update(image_url: params[:image_url], sender_name: params[:sender_name], recipient_email: params[:recipient_email], subject: params[:subject], message: params[:message])
-		render json: card
-	end
-
 	def destroy
 		card = Card.find(params[:id])
 		card.destroy!
@@ -30,7 +24,7 @@ class Api::V1::CardsController < ApplicationController
 	private
 	
 	def card_params
-		params.permit(:image_url, :sender_name, :recipient_email, :subject, :message, :user_id)
+		params.permit(:image_url, :sender_name, :sender_email, :recipient_email, :subject, :message, :user_id)
 	end
 	
 end
